@@ -1,0 +1,52 @@
+// Study Data Structures and Algorithms 
+
+** The simplest data structure is the array, which is a contiguous block of memory. It is usually used to represent sequences.
+
+** Given an array A, A[i] denotes the (i + 1)th object stored in the
+array.
+
+** Retrieving and updating A[i] takes O(1) time. 
+
+Arrays:
+arr = [0, 1, 2, 3, 4]
+
+
+Advantages: 
+1) Random access to elements in O(1) time because you know the address of the item.
+2) Cache frendliness: when you access an item, it is very likely that the processor will pre-fecth nearby items according to the cache 
+capacity. So to access the next item, it is very possible that it has been fetched by the cache.
+
+Types of arrays: 
+* Fixed sized arrays 
+* Dynamic sized arrays: You can insert as many elements as you want e.g lists in python.
+
+Operations on Arrays:
+* Searching an element in an array.
+
+**** (Unsorted Arrays) ****
+E.g Search for 5 in the given arrays
+
+Input: array = {20, 5, 7, 25}
+    x = 5
+Output: true
+
+Input: array = {20, 15, 7, 25}
+    x = 5
+Output: false
+
+TIme complexity  is O(n) becuase in the worst case, it traverses the whole array in linear search (array is unsorted)
+
+**** (Sorted Arrays) ****
+
+Note that we can not inserted in a fixed size array if its already full. We can only insert if it has extra space
+for new inserted elements.
+
+E.g: insert 7 into position 2 in the given array.
+
+Input: array = {5, 10, 20, _, _}
+    x = 7
+    pos = 2
+Output: array ={5, 7, 10, 20, _}
+Time Complexity of insertion is O(n) because the loop is going to run at least n times and O(1) when inserting at the end
+
+
