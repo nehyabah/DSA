@@ -49,4 +49,20 @@ Input: array = {5, 10, 20, _, _}
 Output: array ={5, 7, 10, 20, _}
 Time Complexity of insertion is O(n) because the loop is going to run at least n times and O(1) when inserting at the end
 
+Insert at the end of Dynamic Sized Array.
 
+* Delete Operation
+Input: arr = {3, 8, 12, 5, 6}
+    x =12
+Output = arr={3, 8, 5, 6, _}
+
+Overview of Operations
+
+Insert: O(n)
+Search  : 0(n) for unsorted
+          0(log n) for sorted
+Delete: O(n)
+Get i-th element : O(1)
+Update the i-th element: O(1)
+
+Note: Insert and delete at the end can be done in o(1) time.
